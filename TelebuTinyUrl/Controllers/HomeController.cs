@@ -35,6 +35,7 @@ namespace TelebuTinyUrl.Controllers
             }
         }
         [HttpPost]
+        [Route("CreateShortUrl")]
         public async Task<IActionResult> CreateTinyUrl([FromBody] CreateTinyUrlRequest request)
         {
             if(!ModelState.IsValid)
